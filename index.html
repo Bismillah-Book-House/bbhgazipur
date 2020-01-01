@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>BBH - Bismillah Book House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  <link href="css/jcarousel.css" rel="stylesheet" />
+  <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Theme skin -->
+  <link href="skins/default.css" rel="stylesheet" />
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+  <link rel="shortcut icon" href="ico/favicon.png" />
+
+  <!-- =======================================================
+    Theme Name: Flattern
+    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- toggle top area -->
+    <div class="hidden-top">
+      <div class="hidden-top-inner container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><strong>Presented by DCSA DUET Batch-2018</strong></li>
+              <li>Call us <i class="icon-phone"></i>Md. Abdur Razzak +880 1717-443625, Md. Shohel Rana +880 1719-626259, Md. Sarif Uddin +880 1779776168</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end toggle top area -->
+    <!-- start header -->
+    <header>
+      <div class="container ">
+        <!-- hidden top area toggle link -->
+        <div id="header-hidden-link">
+          <a href="#" class="toggle-link" title="Click me you'll get a contact with team" data-target=".hidden-top"><i></i></a>
+        </div>
+        <!-- end toggle link -->
+
+
+        <div class="row nomargin">
+          <div class="span12">
+            <div class="headnav">
+              <ul>
+                <li><a href="#mySignup" data-toggle="modal"><i class="icon-user"></i> Sign up</a></li>
+                <li><a href="#mySignin" data-toggle="modal">Sign in</a></li>
+              </ul>
+            </div>
+
+
+            <!-- Signup Modal -->
+            <div id="mySignup" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySignupModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySignupModalLabel">Create an <strong>account</strong></h4>
+              </div>
+
+
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+
+
+
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSignupPassword2">Confirm Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSignupPassword2" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Sign up</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Already have an account? <a href="#mySignin" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Sign in</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signup modal -->
+            <!-- Sign in Modal -->
+            <div id="mySignin" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="mySigninModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="mySigninModalLabel">Login to your <strong>account</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputText">Username</label>
+                    <div class="controls">
+                      <input type="text" id="inputText" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="inputSigninPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputSigninPassword" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Sign in</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      Forgot password? <a href="#myReset" data-dismiss="modal" aria-hidden="true" data-toggle="modal">Reset</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end signin modal -->
+            <!-- Reset Modal -->
+            <div id="myReset" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="myResetModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 id="myResetModalLabel">Reset your <strong>password</strong></h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="control-group">
+                    <label class="control-label" for="inputResetEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputResetEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <button type="submit" class="btn">Reset password</button>
+                    </div>
+                    <p class="aligncenter margintop20">
+                      We will send instructions on how to reset your password to your inbox
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- end reset modal -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <div class="logo">
+              <a href="index.html"><img src="img/Logo.jpg" alt="" class="logo" /></a>
+              <h4 class="margintop10" id="accent_color"><strong>Bismillah Book House</strong></h4>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="dropdown active">
+                      <a href="index.html">Home<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="https://en.wikipedia.org/wiki/List_of_Bangladeshi_writers">About Bangladeshi Writers</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Catagory of Books<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="table.html">Table</a></li>
+                        <li><a href="components.html">Components</a></li>
+                        <li><a href="animations.html">56 Animations</a></li>
+                        <li><a href="icons.html">Icons</a></li>
+                        <li><a href="icon-variations.html">Icon variations</a></li>
+                        <li class="dropdown"><a href="#">3 Sliders <i class="icon-angle-right"></i></a>
+                          <ul class="dropdown-menu sub-menu-level1">
+                            <li><a href="index.html">Nivo slider</a></li>
+                            <li><a href="index-alt2.html">Slit slider</a></li>
+                            <li><a href="index-alt3.html">Parallax slider</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Pages <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="pricingbox.html">Pricing boxes</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="404.html">404</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Portfolio <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
+                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#">Blog <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
+                        <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
+                        <li><a href="post-left-sidebar.html">Post left sidebar</a></li>
+                        <li><a href="post-right-sidebar.html">Post right sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <section id="featured">
+      <!-- start slider -->
+      <!-- Slider -->
+      <div id="nivo-slider">
+        <div class="nivo-slider">
+          <!-- Slide #1 image -->
+          <img src="img/slides/nivo/Kazi Nazrul Islam.jpg" alt="" title="#caption-1" />
+          <!-- Slide #2 image -->
+          <img src="img/slides/nivo/Begum Rokeya.jpg" alt="" title="#caption-2" />
+          <!-- Slide #3 image -->
+          <img src="img/slides/nivo/Rabi Tagore.jpg" alt="" title="#caption-3" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <!-- Slide #1 caption -->
+              <div class="nivo-caption" id="caption-1">
+                <div>
+                  <h2>Kazi Nazrul Islam</h2>
+                  <p>
+                    Kazi Nazrul Islam was a Bengali poet, writer, musician, anti-colonial revolutionary and the national poet of Bangladesh. Popularly known as Nazrul, he produced a large body of poetry and music with themes that included religious devotion and rebellion against oppression. Wikipedia
+Born: May 25, 1899, Asansol, India
+Died: August 29, 1976, Dhaka
+Spouse: Pramila Devi (m. 1924–1962)
+Years of service: 1917–1920
+Nicknames: Mr. Sad Man
+                  </p>
+                  <a class="btn btn-large btn-theme btn-rounded" href="https://en.wikipedia.org/wiki/Kazi_Nazrul_Islam">Read More</a>
+                </div>
+              </div>
+              <!-- Slide #2 caption -->
+              <div class="nivo-caption" id="caption-2">
+                <div>
+                  <h2>Begum Rokeya Shakhawat</h2>
+                  <p>
+                   Rokeya Sakhawat Hossain, commonly known as Begum Rokeya, was a Bengali feminist thinker, educator and political activist from British India. She is widely regarded as a pioneer of women's liberation in South Asia. Wikipedia
+Born: December 9, 1880, Rangpur District
+Died: December 9, 1932, Kolkata, India
+Spouse: Syed Sakhawat Hossain (m. 1898–1909)
+                  </p>
+                  <a class="btn btn-large btn-theme btn-rounded" href="https://en.wikipedia.org/wiki/Begum_Rokeya">Read More</a>
+                </div>
+              </div>
+              <!-- Slide #3 caption -->
+              <div class="nivo-caption" id="caption-3">
+                <div>
+                  <h2>Rabindranath Tagore</strong></h2>
+                  <p>
+                    Rabindranath Tagore FRAS, also known by his pen name Bhanu Singha Thakur, and also known by his sobriquets Gurudev, Kabiguru, and Biswakabi, was a polymath, poet, musician, and artist from the Indian subcontinent. Wikipedia
+Born: May 7, 1861, Kolkata, India
+Died: August 7, 1941, Jorasanko Thakur Bari, Kolkata, India
+Artworks: Woman's Face, Head Study (Geometric), Dancing Woman, Dancing Girl, Kopf, Landscape
+                  </p>
+                   <a class="btn btn-large btn-theme btn-rounded" href="https://en.wikipedia.org/wiki/Rabindranath_Tagore">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end slider -->
+    </section>
+    <section class="callaction">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="big-cta">
+              <div class="cta-text">
+
+
+                <h3>Popular Writers</h3>
+              </div>
+              <div class="cta floatright">
+                <a class="btn btn-large btn-theme btn-rounded" href="contact.html">Request a Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-book icon-circled icon-64 active"></i>
+
+                  </div>
+                  <div class="text">
+                    <h6>Jahanara Imam</h6>
+                    <p>
+                     Jahanara Imam was a Bangladeshi writer and political activist. She is known for her efforts to bring those accused of committing war crimes in the Bangladesh Liberation War to trial. She has been called "Shaheed Janani"
+                    </p>
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://en.wikipedia.org/wiki/Jahanara_Imam">Read More</a>
+                   </div>
+                </div>
+              </div>
+
+
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-book icon-circled icon-64 active"></i>
+                  </div>
+                  <div class="text">
+                    <h6>Nirmalendu Goon</h6>
+                    <p>
+                      Nirmalendu Goon is a Bangladeshi poet known for his accessible verse. He was awarded Ekushey Padak in 2001 and Independence Day Award by the Government of Bangladesh in 2016. He was also awarded Bangla Academy Literary Award in 1982.
+                    </p>
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://en.wikipedia.org/wiki/Nirmalendu_Goon">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-book icon-circled icon-64 active"></i>
+                  </div>
+                  <div class="text">
+                    <h6>Sufia Kamal</h6>
+                    <p>
+                     Begum Sufia Kamal was a Bangladeshi poet and political activist. She took part in the Bengali nationalist movement of the 1950s and civil society leader in independent Bangladesh. She died in 1999 and was the first woman to be given a state funeral in Bangladesh.
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://en.wikipedia.org/wiki/Sufia_Kamal">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-book icon-circled icon-64 active"></i>
+                  </div>
+                  <div class="text">
+                    <h6>Jasimuddin</h6>
+                    <p>
+                      Jasimuddin, popularly called Palli Kabi, was a Bangladeshi poet, lyricist, composer and writer widely celebrated for his modern ballad sagas in the pastoral mode. His Nakshi Kanthar Math and Sojan Badiar Ghat are considered among the best lyrical poems in the Bengali language.
+                    </p>
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://en.wikipedia.org/wiki/Jasimuddin">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- divider -->
+        <div class="row">
+          <div class="span12">
+            <div class="solidline">
+            </div>
+          </div>
+        </div>
+        <!-- end divider -->
+
+
+        <!-- Portfolio Projects -->
+        <div class="row">
+          <div class="span12">
+            <h4 class="heading">Recent Uploaded Books</strong></h4>
+            <div class="row">
+              <section id="projects">
+                <ul id="thumbs" class="portfolio">
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Humayun Ahmed/Aj Himur Biye.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://www.amarbooks.org/download.php?id=17770#pdf">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Humayun Ahmed/Megher Upor Bari.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://www.amarbooks.org/download.php?id=20301">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Humayun Ahmed/Deyal.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://www.amarbooks.org/download.php?id=19358">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+
+
+
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Humayun Ahmed/Somrat.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://bdebooks.com/books/somrat-by-humayun-ahmed/">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+
+
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Jafar Iqbal/Andhakarer Grantha.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://www.amarbooks.org/download.php?id=18005">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Jafar Iqbal/Bristir Thikana.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://www.amarbooks.org/download.php?id=19469">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+                  
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Jafar Iqbal/Boishakher Hahakar.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://www.amarbooks.org/download.php?id=19478">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+                  
+
+
+                  <!-- Item Project and Filter Name -->
+					<li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <!-- Thumb Image and Description -->
+                    <img src="img/works/thumbs/Jafar Iqbal/Tuntuni O Choto Chacchu.jpg">
+                    <a class="btn btn-large btn-theme btn-rounded" href="https://www.amarbooks.org/download.php?id=18773">Download Now</a>
+                  </li>
+                  <!-- End Item Project -->
+
+
+
+
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- End Portfolio Projects -->
+
+
+        <!-- divider -->
+        <div class="row">
+          <div class="span12">
+            <div class="solidline">
+            </div>
+          </div>
+        </div>
+        <!-- end divider -->
+
+
+        <div class="row">
+          <div class="span12">
+            <h4>Our Recent Clients</strong></h4>
+
+
+            <ul id="mycarousel" class="jcarousel-skin-tango recent-jcarousel clients">
+
+
+
+
+	<li>
+	<img src="img/dummies/clients/01.jpg"/>
+	<a class="btn btn-theme" href="https://www.facebook.com/mdazimul.islam.14">Md. Azimul Islam</a>
+	</li>
+
+
+	<li>
+	<img src="img/dummies/clients/02.jpg"/>
+<a class="btn btn-theme" href="https://www.facebook.com/jahir.hasan.75">Jahir Hasan</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/03.jpg"/>
+<a class="btn btn-theme" href="https://www.facebook.com/mdshasinuralam.sahin">Md. Shahinur Alam</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/04.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/profile.php?id=100023955000988">Md. Matiur Rahman</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/05.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/profile.php?id=100004879217164">Kamal Hossain HD</a>
+	</li>              
+
+
+
+	<li>
+	<img src="img/dummies/clients/06.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/mdhabiburrahman.habib.507">M Habibur Rahman</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/07.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/tariful.islam.777363">Md. Tariful Islam</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/08.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/amin.islam.9026040">Amin Islam</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/09.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/najir.babu.1">Md. Abu Kayes</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/10.jpg"/>
+<a class="btn btn-theme" href="https://www.facebook.com/jahir.hasan.75">Mohammad Najir</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/11.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/nazmul.hossien.77">Nazmul Hossain</a>
+	</li>              
+
+
+	<li>
+	<img src="img/dummies/clients/12.jpg"/>
+<a class="btn btn-theme" href="https://web.facebook.com/SHOOHANUR">Shohanur Rahman</a>
+	</li>              
+              
+              
+              
+              
+              
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+          <div class="solidline">
+            <div class="aligncenter">
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <div class="widget">
+              <h5 class="widgetheading">Browse pages</h5>
+              <ul class="link-list">
+                <li><a href="#">About our company</a></li>
+                <li><a href="#">Our services</a></li>
+                <li><a href="#">Meet our team</a></li>
+                <li><a href="#">Explore our portfolio</a></li>
+                <li><a href="#">Get in touch with us</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="span3">
+            <div class="widget">
+              <h5 class="widgetheading">Important stuff</h5>
+              <ul class="link-list">
+                <li><a href="#">Press release</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Career center</a></li>
+                <li><a href="#">Flattern forum</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <div class="span3">
+            <div class="widget">
+              <h5 class="widgetheading">Get in touch with us</h5>
+              <address>
+								<strong>Flattern studio, Pte Ltd</strong><br>
+								 Springville center X264, Park Ave S.01<br>
+								 Semarang 16425 Indonesia
+	 		  </address>
+              <p>
+                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+                <i class="icon-envelope-alt"></i> email@domainname.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p>
+                  <span>&copy; Bismillah Book House - All right reserved.</span></p>
+                <div class="credits">
+                  <p>
+                    <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+                  -->
+                  Designed by: <a href="https://web.facebook.com/mdabdur.razzak.750331">Md. Abdur Razzak</a></p>
+                  <p><a href="https://web.facebook.com/mdabdur.razzak.750331">DCSA DUET Batch-2018</a></p>
+              </div></div></div>
+            <div class="span6">
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Google plus"><i class="icon-google-plus icon-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/jquery.nivo.slider.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.ba-cond.min.js"></script>
+  <script src="js/jquery.slitslider.js"></script>
+  <script src="js/animate.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="js/custom.js"></script>
+
+</body>
+</html>
